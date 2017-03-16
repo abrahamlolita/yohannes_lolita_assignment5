@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5: Step 9</title>
+</head>
+<body>
+    <button id="startButton">Start</button><br><br>
+    <button id="stopButton">Stop</button>
+    <script>
+        var startMessage;
+        startButton.addEventListener("click", writeMessage, false);
+        function writeMessage() {
+            function logMessage() {
+                window.console.log("Learning JavaScript is fun!")
+            };
+            startMessage = window.setInterval(logMessage, 2000);
+        };
+        stopButton.addEventListener("click", function(e) {
+            clearInterval(startMessage)
+        }, false);
+        </script>
+</body>
+</html>

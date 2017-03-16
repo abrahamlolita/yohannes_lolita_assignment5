@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5: Step 9</title>
+</head>
+<body>
+    <select id="menu">
+       <option value="pasta">Pasta</option>
+       <option value="pizza">Pizza</option>
+       <option value="salad">Salad</option>
+       <option value="sandwich">Sandwich</option>
+   </select>
+   <button id="selectButton">Select</button>
+    <script>
+        selectButton.addEventListener("click", function(e) {
+            window.alert(document.getElementById("menu").value);
+        }, false);
+        </script>
+</body>
+</html>
